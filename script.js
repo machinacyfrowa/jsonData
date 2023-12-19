@@ -19,11 +19,13 @@ class Point {
     }
 }
 
+let points = Array(100);
 for(let i=0; i<100; i++) {
-    let p = new Point();
-    p.appendName(i);
-    p.display();
+    points[i] = new Point();
+    points[i].appendName(i);
+    
 }
+document.write(JSON.stringify(points));
 //do zastanowienia sie
-let points = Array(100).fill(new Point());
-console.log(points);
+//let points = Array(100).fill(new Point());
+//console.log(points);
